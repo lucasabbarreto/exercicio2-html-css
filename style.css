@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1280px;
+    height: 122px;
+    width: 100%;
+    box-shadow: 0px 0px 20px 0 rgba(139, 139, 139, 0.65);
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    margin-left: 19px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 39px;
+}
+
+header ul li {
+    margin-left: 24.5px;
+    font-weight: 600;
+    color: #777777;
+    font-size: 24px;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.index-main {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+main p {
+    margin: 68px 0 0 0;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+}
+
+.top-styles {
+    display: flex;
+    margin-top: 82px;
+    gap: 54px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-styles .first {
+    width: 400px;
+    height: 600px;
+}
+
+.sales{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    margin-top: 207px;
+    height: 662px;
+    background: #C2185B;
+}
+
+.sales-percentage {
+    margin: 61px auto 54px auto;
+    font-weight: 800;
+    font-size: 44px;
+    color: #FFFFFF
+}
+
+.sales-boxes {
+    display: flex;
+    height: 388px;
+    gap: 18px;
+    margin-left: 102px;
+}
+
+.sales-products {
+    display: flex;
+    flex-direction: column;
+    height: 388px;
+    background-color: #FFFFFF;
+}
+
+.sales-products img {
+    width: 260px;
+    height: 300px;
+}
+
+.name {
+    margin-top: 18px;
+    margin-left: 11px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.price {
+    margin-left: 11px;
+    font-size: 16px;
+}
+
+.bot-section {
+    height: 939px;
+    display: flex;
+    margin-top: 163px;
+    padding-left: 127px;
+    gap: 28px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.bot-product-name {
+    font-weight: 600;
+    font-size: 39px;
+}
+
+.details-link {
+    width: 403px;
+    height: 99px;
+    font-weight: 600;
+    font-size: 39px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+    padding: 0;
+    border: 0;
+    color: white;
+    background-color: #C2185B;
+    ;
+}
+
+.details-link:hover {
+    border: solid 1px #C2185B;
+    background-color: #FFFFFF;
+    color: #C2185B;
+    transition: 0.5s;
+
+}
+
+footer {
+    display: flex;
+    background-color: #C2185B;
+    width: 1280px;
+    height: 248px;
+    margin: 116px auto 0 auto;
+}
+
+.brand-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 128px;
+}
+
+.brand-description img {
+    margin-top: 19px;
+    width: 233px;
+    height: 123px;
+    margin-left: 1px;
+}
+
+.brand-description span {
+    font-size: 14px;
+    color: white;
+    width: 255px;
+}
+
+.footer-categories {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px
+}
+
+.footer-category-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.footer-category-items {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer-category-items ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-category-items ul li:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.middle-box {
+    margin-left: 263px;
+}
+
+.right-box {
+    margin-left: 136px;
+}
+
+/* style da página de contato */
+/* VVVVVVVVVVVVVVVVVVVVVVVVVV */
+
+.contact-main {
+    display: flex;
+    margin: 0 auto;
+    width: 1280px;
+    height: 792px;
+    gap: 28px;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    margin-left: 123px;
+    width: 585px;
+    color: #575757;
+}
+
+.form-area span {
+    font-size: 39px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-a {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.input-a {
+    width: 538px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.input-b {
+    width: 546px;
+    height: 26px;
+    margin-bottom: 15px;
+}
+
+form div {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.div-checkbox-radio {
+    display: flex;
+    align-items: center;
+}
+
+.input-radio-checkbox {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.label-checkbox {
+    margin-left: 3px;
+    margin-right: 14px;
+}
+
+.label-email {
+    margin-left: 3px;
+    margin-right: 57px;
+}
+
+.label-call {
+    margin-left: 3px;
+    margin-right: 80px;
+}
+
+.textarea {
+    width: 538px;
+    height: 78px;
+    margin-bottom: 22px;
+}
+
+.div-curriculo {
+    margin-bottom: 22px;
+}
+
+.label-curriculo {
+    margin-right: 10px;
+}
+main section form button {
+    width: 544px;
+    height: 33px;
+    padding: 0;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #C2185B;
+    border: 0;
+}
+
+main section form button:hover {
+    color: #C2185B;
+    background-color: #FFFFFF;
+    border: 1px solid #C2185B;
+    transition: 0.5s;
+}
+
+.contact-description-page {
+    margin-top: 146px;
+    width: 464px;
+    font-size: 16px;
+    color: #575757;
+    ;
+}
