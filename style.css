@@ -5,6 +5,7 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
+    position: relative;
 }
 
 header {
@@ -22,17 +23,23 @@ header img {
     margin-left: 19px;
 }
 
-header ul {
+.nav-bar {
     list-style-type: none;
     display: flex;
     margin-right: 39px;
 }
 
-header ul li {
+.nav-bar li {
     margin-left: 24.5px;
     font-weight: 600;
     color: #777777;
     font-size: 24px;
+}
+
+.menu-icon {
+    display: none;
+    width: 60px;
+    margin-right: 19px;
 }
 
 header ul li:hover {
@@ -43,6 +50,10 @@ header ul li:hover {
 .index-main {
     margin: 0 auto;
     max-width: 1280px;
+    width: 100%;
+}
+
+.banner {
     width: 100%;
 }
 
@@ -63,7 +74,6 @@ main p {
 
 .top-styles .first {
     width: 400px;
-    height: 600px;
 }
 
 .sales{
@@ -84,6 +94,7 @@ main p {
 
 .sales-boxes {
     display: flex;
+    flex-wrap: wrap;
     height: 388px;
     gap: 18px;
     margin-left: 102px;
@@ -142,14 +153,13 @@ main p {
     border: 0;
     color: white;
     background-color: #C2185B;
-    ;
+    transition: 0.5s ease-in-out;
 }
 
 .details-link:hover {
     border: solid 1px #C2185B;
     background-color: #FFFFFF;
     color: #C2185B;
-    transition: 0.5s;
 
 }
 
@@ -201,6 +211,13 @@ footer {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.footer-category-items ul a {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: default;
 }
 
 .footer-category-items ul li:hover {
@@ -316,13 +333,13 @@ main section form button {
     color: #FFFFFF;
     background-color: #C2185B;
     border: 0;
+    transition: 0.5s ease-in-out;
 }
 
 main section form button:hover {
     color: #C2185B;
     background-color: #FFFFFF;
     border: 1px solid #C2185B;
-    transition: 0.5s;
 }
 
 .contact-description-page {
@@ -332,3 +349,87 @@ main section form button:hover {
     color: #575757;
     ;
 }
+
+.anuncio {
+    display: flex;
+    height: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #C2185B;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.anuncio span {
+    margin: 0 auto;
+    font-size: 23px;
+    font-weight: 500;
+    color: white;
+}
+
+.doc-button {
+    display: none;
+}
+
+.doc-button-label {
+    padding: 3px 38px;
+    background-color: #C4C4C4;
+    font-size: 14px;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.doc-button-label:hover {
+    background-color: #C2185B;
+}
+
+@media (max-width:1200px) {
+    .top-styles {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width: 1023px) {
+    .nav-bar li {
+        margin-left: 20px;
+        font-weight: 600;
+        color: #777777;
+        font-size: 20px;
+    }
+    main p {
+        margin: 50px 0 0 0;
+        font-weight: 800;
+        font-size: 50px;
+        text-align: center;
+    }
+    .top-styles {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar li {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    main p {
+        margin: 35px 0 0 0;
+        font-weight: 800;
+        font-size: 50px;
+        text-align: center;
+    }
+    .top-styles .first {
+        width: 360px;
+    }
+    .top-styles .second {
+        width: 560px;
+    }
+
+
+}
+
